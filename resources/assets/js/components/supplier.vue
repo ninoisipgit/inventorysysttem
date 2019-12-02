@@ -60,7 +60,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="number" class="form-control" placeholder="Contact Number" v-model="contact">
+                                            <input type="text" class="form-control" placeholder="Contact Number" id="contact" v-model="contact">
                                             <span v-if="errors" style="color:red">{{errors.contact}}</span>
                                         </div>
                                     </div>
@@ -143,8 +143,6 @@ import { Script } from 'vm';
                     this.supplierId =  obj.id;;
                 }
             },
-
-
             clearModal (){
                 $("#clrBtn")[0].click();
             },
@@ -166,7 +164,7 @@ import { Script } from 'vm';
                         this.getSupplier();
                     }
                 }).catch(error => {
-                    this.errors = error.response.data.errors;
+                    this.errors = error.response.data;
                 });
 
             },

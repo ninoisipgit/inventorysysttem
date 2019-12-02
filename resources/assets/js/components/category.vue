@@ -160,7 +160,7 @@
                         this.getCategory();
                     }
                 }).catch(error => {
-                    this.errors = error.response.data.errors;
+                    this.errors = error.response.data;
                 });
 
             },

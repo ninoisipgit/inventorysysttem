@@ -71,7 +71,7 @@
                                                     <option v-bind:value="value.id">{{value.supplier}}</option>
                                                 </template>
                                             </select>
-                                            <!-- <span v-if="errors" style="color:red">{{errors.company}}</span> -->
+                                            <span v-if="errors" style="color:red">{{errors.supplier}}</span>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -81,7 +81,7 @@
                                                     <option v-bind:value="value.id">{{value.name}}</option>
                                                 </template>
                                             </select>
-                                            <!-- <span v-if="errors" style="color:red">{{errors.company}}</span> -->
+                                            <span v-if="errors" style="color:red">{{errors.category}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -191,7 +191,7 @@ import { Script } from 'vm';
                 axios.get(axiosUrl, data).then(response => {
                     self.categoryList = response.data;
                 }).catch(error => {
-                    self.errors = error.response.data.errors;
+                    self.errors = error.response.data;
                 });
     
             },
@@ -259,7 +259,7 @@ import { Script } from 'vm';
                         this.getProduct();
                     }
                 }).catch(error => {
-                    this.errors = error.response.data.errors;
+                    this.errors = error.response.data;
                 });
 
             },
