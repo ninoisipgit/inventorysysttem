@@ -24,7 +24,7 @@ class ReportsController extends Controller
         if($product){
             foreach($product as $value){
                 $supplier = Supplier::find($value->supplier_id);
-                $supplierName  = $supplier->supplier;
+                $supplierName  = $supplier['supplier'];
 
 	    		if(array_key_exists($supplierName, $finalList)){
 	    			$totals = $finalList[$supplierName];
@@ -32,7 +32,7 @@ class ReportsController extends Controller
 	    			$totals = array(
 	    				"quantity" => 0,
 	    				"amount" => 0,
-	    				"contact" => $supplier->contact
+	    				"contact" => $supplier['contact']
 	    			);
                 }
                 $totals['quantity'] += $value->quantity;
