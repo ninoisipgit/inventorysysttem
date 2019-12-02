@@ -25,10 +25,12 @@
                                 <td>{{supplier.supplier}}</td>
                                 <td>{{supplier.contact}}</td>
                                 <td>
-                                    <center><button type="button" id="btnEdit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#supplierModal" v-on:click="showModal(supplier.id);">Edit</button></center>
+                                    <center><button type="button" id="btnEdit" class="btn btn-info btn-sm" data-toggle="modal" data-target="#supplierModal" v-on:click="showModal(supplier.id);"><i class="fas fa-pencil-alt">
+                                        </i> Edit</button></center>
                                 </td>
                                 <td>
-                                    <center><button type="button" id="btnDel" class="btn btn-danger btn-sm" v-on:click="delSupplier(supplier.id);">delete</button></center>
+                                    <center><button type="button" id="btnDel" class="btn btn-danger btn-sm" v-on:click="delSupplier(supplier.id);"><i class="fas fa-trash">
+                                        </i> Delete</button></center>
                                 </td>
                             </tr>
                         </tbody>

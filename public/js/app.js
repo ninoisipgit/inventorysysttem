@@ -2392,6 +2392,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: [],
@@ -2555,6 +2557,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vm */ "./node_modules/vm-browserify/index.js");
 /* harmony import */ var vm__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vm__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
 //
 //
 //
@@ -49274,7 +49278,7 @@ var render = function() {
                                 },
                                 [
                                   _c("i", { staticClass: "fas fa-pencil-alt" }),
-                                  _vm._v("Edit")
+                                  _vm._v(" Edit")
                                 ]
                               )
                             ])
@@ -49299,7 +49303,7 @@ var render = function() {
                                 },
                                 [
                                   _c("i", { staticClass: "fas fa-trash" }),
-                                  _vm._v("delete")
+                                  _vm._v(" Delete")
                                 ]
                               )
                             ])
@@ -49633,7 +49637,7 @@ var render = function() {
                           _c(
                             "button",
                             {
-                              staticClass: "btn btn-primary btn-sm",
+                              staticClass: "btn btn-info btn-sm",
                               attrs: {
                                 type: "button",
                                 id: "btnEdit",
@@ -49646,7 +49650,10 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("Edit")]
+                            [
+                              _c("i", { staticClass: "fas fa-pencil-alt" }),
+                              _vm._v(" Edit")
+                            ]
                           )
                         ])
                       ],
@@ -49668,7 +49675,10 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("delete")]
+                            [
+                              _c("i", { staticClass: "fas fa-trash" }),
+                              _vm._v(" Delete")
+                            ]
                           )
                         ])
                       ],
@@ -50109,7 +50119,7 @@ var render = function() {
                           _c(
                             "button",
                             {
-                              staticClass: "btn btn-primary btn-sm",
+                              staticClass: "btn btn-info btn-sm",
                               attrs: {
                                 type: "button",
                                 id: "btnEdit",
@@ -50122,7 +50132,10 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("Edit")]
+                            [
+                              _c("i", { staticClass: "fas fa-pencil-alt" }),
+                              _vm._v(" Edit")
+                            ]
                           )
                         ])
                       ],
@@ -50144,7 +50157,10 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("delete")]
+                            [
+                              _c("i", { staticClass: "fas fa-trash" }),
+                              _vm._v(" Delete")
+                            ]
                           )
                         ])
                       ],

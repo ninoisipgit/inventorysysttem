@@ -26,11 +26,11 @@
                                 <td>{{category.name}}</td>
                                 <td>
                                     <center><button type="button" id="btnEdit" class="btn btn-info btn-sm" data-toggle="modal" data-target="#categoryModal" v-on:click="showModal(category.id);"><i class="fas fa-pencil-alt">
-                                        </i>Edit</button></center>
+                                        </i> Edit</button></center>
                                 </td>
                                 <td>
                                     <center><button type="button" id="btnDel" class="btn btn-danger btn-sm" v-on:click="delCategory(category.id);"><i class="fas fa-trash">
-                                        </i>delete</button></center>
+                                        </i> Delete</button></center>
                                 </td>
                             </tr>
                         </tbody>
