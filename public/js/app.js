@@ -2058,6 +2058,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: [],
   data: function data() {
@@ -49257,7 +49259,7 @@ var render = function() {
                               _c(
                                 "button",
                                 {
-                                  staticClass: "btn btn-primary btn-sm",
+                                  staticClass: "btn btn-info btn-sm",
                                   attrs: {
                                     type: "button",
                                     id: "btnEdit",
@@ -49270,7 +49272,10 @@ var render = function() {
                                     }
                                   }
                                 },
-                                [_vm._v("Edit")]
+                                [
+                                  _c("i", { staticClass: "fas fa-pencil-alt" }),
+                                  _vm._v("Edit")
+                                ]
                               )
                             ])
                           ],
@@ -49292,7 +49297,10 @@ var render = function() {
                                     }
                                   }
                                 },
-                                [_vm._v("delete")]
+                                [
+                                  _c("i", { staticClass: "fas fa-trash" }),
+                                  _vm._v("delete")
+                                ]
                               )
                             ])
                           ],
